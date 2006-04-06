@@ -8,7 +8,7 @@
 Summary:	XML::XSLT::Wrapper - Consistent interface to XSLT processors
 Name:		perl-XML-XSLT-Wrapper
 Version:	0.32
-Release:	0.1
+Release:	0.2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -18,6 +18,9 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# found from inline code
+%define		_noautoreq	'perl(XML::Xalan::Transformer)'
 
 %description
 Provides a consistent interface to various XSLT processors.  Tries each
