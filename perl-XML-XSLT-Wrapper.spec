@@ -6,13 +6,14 @@
 %define	pdir	XML
 %define	pnam	XSLT-Wrapper
 Summary:	XML::XSLT::Wrapper - Consistent interface to XSLT processors
+Summary(pl):	XML::XSLT::Wrapper - spójny interfejs do procesorów XSLT
 Name:		perl-XML-XSLT-Wrapper
 Version:	0.32
 Release:	0.2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/M/MU/MULL/XML-XSLT-Wrapper-0.32.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/M/MU/MULL/XML-XSLT-Wrapper-%{version}.tar.gz
 # Source0-md5:	d08350e5d6a45d5e42ac7ab5fa80fd45
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,11 +24,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'perl(XML::Xalan::Transformer)'
 
 %description
-Provides a consistent interface to various XSLT processors.  Tries each
-of a supplied list of processors in turn until one performs a successful
-transform. If no list is given, tries all the processors it knows until
-one works. Does its best to fail gracefully whenever a processor does
-not work for some reason.
+Provides a consistent interface to various XSLT processors. Tries each
+of a supplied list of processors in turn until one performs a
+successful transform. If no list is given, tries all the processors it
+knows until one works. Does its best to fail gracefully whenever a
+processor does not work for some reason.
+
+%description -l pl
+Ten modu³ udostêpnia spójny interfejs do ró¿nych procesorów XSLT.
+Próbuje ka¿dy z dostarczonej listy procesorów a¿ których wykona
+pomy¶lnie przekszta³cenie. Je¶li nie przekazano listy procesorów,
+próbuje wszystkich znanych sobie procesorów. Usi³uje zachowaæ siê jak
+najlepiej w przypadku niepowodzenia którego¶ z procesorów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
