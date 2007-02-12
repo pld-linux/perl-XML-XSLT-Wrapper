@@ -6,7 +6,7 @@
 %define	pdir	XML
 %define	pnam	XSLT-Wrapper
 Summary:	XML::XSLT::Wrapper - Consistent interface to XSLT processors
-Summary(pl):	XML::XSLT::Wrapper - spójny interfejs do procesorów XSLT
+Summary(pl.UTF-8):   XML::XSLT::Wrapper - spÃ³jny interfejs do procesorÃ³w XSLT
 Name:		perl-XML-XSLT-Wrapper
 Version:	0.32
 Release:	0.2
@@ -30,12 +30,12 @@ successful transform. If no list is given, tries all the processors it
 knows until one works. Does its best to fail gracefully whenever a
 processor does not work for some reason.
 
-%description -l pl
-Ten modu³ udostêpnia spójny interfejs do ró¿nych procesorów XSLT.
-Próbuje ka¿dy z dostarczonej listy procesorów a¿ których wykona
-pomy¶lnie przekszta³cenie. Je¶li nie przekazano listy procesorów,
-próbuje wszystkich znanych sobie procesorów. Usi³uje zachowaæ siê jak
-najlepiej w przypadku niepowodzenia którego¶ z procesorów.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia spÃ³jny interfejs do rÃ³Å¼nych procesorÃ³w XSLT.
+PrÃ³buje kaÅ¼dy z dostarczonej listy procesorÃ³w aÅ¼ ktÃ³rych wykona
+pomyÅ›lnie przeksztaÅ‚cenie. JeÅ›li nie przekazano listy procesorÃ³w,
+prÃ³buje wszystkich znanych sobie procesorÃ³w. UsiÅ‚uje zachowaÄ‡ siÄ™ jak
+najlepiej w przypadku niepowodzenia ktÃ³regoÅ› z procesorÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
