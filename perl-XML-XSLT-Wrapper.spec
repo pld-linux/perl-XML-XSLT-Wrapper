@@ -6,7 +6,7 @@
 %define	pdir	XML
 %define	pnam	XSLT-Wrapper
 Summary:	XML::XSLT::Wrapper - Consistent interface to XSLT processors
-Summary(pl.UTF-8):   XML::XSLT::Wrapper - spójny interfejs do procesorów XSLT
+Summary(pl.UTF-8):	XML::XSLT::Wrapper - spójny interfejs do procesorów XSLT
 Name:		perl-XML-XSLT-Wrapper
 Version:	0.32
 Release:	0.2
