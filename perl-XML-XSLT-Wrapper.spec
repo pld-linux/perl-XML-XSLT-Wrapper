@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	XML
 %define	pnam	XSLT-Wrapper
+%include	/usr/lib/rpm/macros.perl
 Summary:	XML::XSLT::Wrapper - Consistent interface to XSLT processors
 Summary(pl.UTF-8):	XML::XSLT::Wrapper - spójny interfejs do procesorów XSLT
 Name:		perl-XML-XSLT-Wrapper
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/MU/MULL/XML-XSLT-Wrapper-%{version}.tar.gz
 # Source0-md5:	d08350e5d6a45d5e42ac7ab5fa80fd45
+URL:		http://search.cpan.org/dist/XML-XSLT-Wrapper/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
