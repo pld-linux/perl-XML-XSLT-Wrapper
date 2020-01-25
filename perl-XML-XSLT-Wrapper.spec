@@ -4,7 +4,6 @@
 
 %define	pdir	XML
 %define	pnam	XSLT-Wrapper
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::XSLT::Wrapper - Consistent interface to XSLT processors
 Summary(pl.UTF-8):	XML::XSLT::Wrapper - spójny interfejs do procesorów XSLT
 Name:		perl-XML-XSLT-Wrapper
